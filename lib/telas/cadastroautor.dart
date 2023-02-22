@@ -84,7 +84,7 @@ class _CadastroAutor extends State<CadastroAutor> {
                   ElevatedButton(
                       onPressed: (){
                         if(_formKey.currentState!.validate()){
-                          print("Cadastrado com sucesso!");
+                          Navigator.pushNamed(context,"/listagemautor");
                         }
                       },//onPressed
                       child: Text("Cadastrar")

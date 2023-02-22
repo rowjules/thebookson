@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:thebookson/rotas.dart';
+import 'package:thebookson/telas/cadastroautor.dart';
+import 'package:thebookson/telas/login.dart';
 
 void main() {
   runApp( MaterialApp (
     title: 'TheBooksOn',
     theme: ThemeData(
-      primarySwatch: createMaterialColor(Color(0xFF620A03));
+      primarySwatch: createMaterialColor(Color(0xFF620A03))
     ),
-    home: Login(),
+    initialRoute:'/',
+    onGenerateRoute: Routes.generateRoutes,
+    home: CadastroAutor(),
   ));
 }
 

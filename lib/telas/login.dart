@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
-  const Login({super.key, required this.title});
-
-
-  final String title;
 
   @override
-  State<Login> createState() => _MyHomePageState();
+  State<Login> createState() => _LoginState();
 }
 
-class _MyHomePageState extends State<Login> {
+class _LoginState extends State<Login> {
 
   TextEditingController _controllerEmail = TextEditingController();
   TextEditingController _controllerPassword = TextEditingController();
